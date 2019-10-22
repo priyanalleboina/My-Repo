@@ -11,7 +11,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let list of listdata |searchpipe:tilevalue" (click)="openmodal(list)" data-toggle="modal" data-target="#myModal">
+        <tr *ngFor="let list of listdata |searchpipe:tilevalue" (click)="openmodal(list)" data-toggle="modal" data-target="#viewTabledetails">
           <td>{{list.title}}</td>
           <td>{{list.url}}</td>
           <td>{{list.created_at}}</td>
@@ -20,7 +20,7 @@
       </tbody>
     </table>
   </div>
-  <div class="modal" id="myModal">
+  <div class="modal" id="viewTabledetails">
     <div class="modal-dialog">
       <div class="modal-content">
       
