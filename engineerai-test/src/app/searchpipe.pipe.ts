@@ -9,8 +9,8 @@ export class SearchpipePipe implements PipeTransform {
     if(!searchvalue) {
       return listdata;
     }
-    return listdata.filter((lock) => {
-      return lock.title.toLowerCase().match(searchvalue.toLowerCase());
+    return listdata.filter((searchoflistdata) => {
+      return searchoflistdata.title.toLowerCase().match(searchvalue.toLowerCase());
     });
   }
 
